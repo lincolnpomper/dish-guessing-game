@@ -1,4 +1,4 @@
-package com.lincolnpomper.jogogourmet.logic;
+package com.lincolnpomper.dishguess.logic;
 
 public class Answer {
 

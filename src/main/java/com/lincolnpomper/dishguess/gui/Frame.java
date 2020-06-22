@@ -1,7 +1,7 @@
-package com.lincolnpomper.jogogourmet.gui;
+package com.lincolnpomper.dishguess.gui;
 
-import com.lincolnpomper.jogogourmet.StartGameManager;
-import com.lincolnpomper.jogogourmet.logic.Answer;
+import com.lincolnpomper.dishguess.StartGameManager;
+import com.lincolnpomper.dishguess.logic.Answer;
 
 import javax.swing.*;
 import java.awt.*;

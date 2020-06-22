@@ -1,6 +1,6 @@
-import com.lincolnpomper.jogogourmet.logic.FoodNode;
-import com.lincolnpomper.jogogourmet.logic.GameSimple;
-import com.lincolnpomper.jogogourmet.logic.GuessManager;
+import com.lincolnpomper.dishguess.logic.FoodNode;
+import com.lincolnpomper.dishguess.logic.Game;
+import com.lincolnpomper.dishguess.logic.GuessManager;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -34,7 +34,7 @@ public class IntegratedTests {
 
 	@Test public void whenPredefinedAnswerYesNoShouldFindMacarraoFood() {
 
-		new GameSimple(guessManager, rootNode).run();
+		new Game(guessManager, rootNode).run();
 		final String guess = ((GuessManagerPredefinedAnswersMock) guessManager).getRightGuess();
 
 		Assert.assertEquals("Macarrão", guess);

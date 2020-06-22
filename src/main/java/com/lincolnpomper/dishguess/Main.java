@@ -1,14 +1,14 @@
-package com.lincolnpomper.jogogourmet;
+package com.lincolnpomper.dishguess;
 
-import com.lincolnpomper.jogogourmet.gui.Frame;
-import com.lincolnpomper.jogogourmet.logic.*;
+import com.lincolnpomper.dishguess.gui.Frame;
+import com.lincolnpomper.dishguess.logic.*;
 
 import javax.swing.*;
 
 public class Main implements GuessManager, StartGameManager {
 
 	private Frame frame;
-	private GameSimple game;
+	private Game game;
 
 	private Main() {
 
@@ -31,7 +31,7 @@ public class Main implements GuessManager, StartGameManager {
 		} else {
 			node = game.getRootNode();
 		}
-		game = new GameSimple(this, node);
+		game = new Game(this, node);
 		Thread thread = new Thread(game);
 		thread.start();
 	}

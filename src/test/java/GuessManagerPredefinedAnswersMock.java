@@ -1,5 +1,5 @@
-import com.lincolnpomper.jogogourmet.logic.Answer;
-import com.lincolnpomper.jogogourmet.logic.GuessManager;
+import com.lincolnpomper.dishguess.logic.Answer;
+import com.lincolnpomper.dishguess.logic.GuessManager;
 
 public class GuessManagerPredefinedAnswersMock implements GuessManager {
 

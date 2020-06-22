@@ -1,6 +1,6 @@
-package com.lincolnpomper.jogogourmet.logic;
+package com.lincolnpomper.dishguess.logic;
 
-public class GameSimple implements Runnable {
+public class Game implements Runnable {
 
 	private final GuessManager guessManager;
 
@@ -9,7 +9,7 @@ public class GameSimple implements Runnable {
 	private FoodNode beforeYesNode;
 	private FoodNode beforeNoNode;
 
-	public GameSimple(GuessManager guessManager, FoodNode foodTree) {
+	public Game(GuessManager guessManager, FoodNode foodTree) {
 
 		this.guessManager = guessManager;
 		this.rootNode = this.currentNode = foodTree;
